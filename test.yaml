@@ -2,7 +2,7 @@
 -
   hosts: localhost
   tasks:
-    - name: restart haproxy process
+   - name: restart haproxy process
       apt:
       name: ['nginx']
       state: latest
