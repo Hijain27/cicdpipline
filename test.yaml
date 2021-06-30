@@ -1,7 +1,9 @@
- hosts: localhost
-  become: yes
+---
+-
+  hosts: localhost
   tasks:
-  - name: "install nginx"
-    apt:
+    - name: restart haproxy process
+      apt:
       name: ['nginx']
       state: latest
+  
