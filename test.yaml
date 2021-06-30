@@ -1,6 +1,9 @@
 ---
 -
   hosts: localhost
+  become: true
+  become_method: sudo
+  become_user: root
   tasks:
    - name: restart haproxy process
      apt:
